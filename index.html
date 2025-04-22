@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<title>Meeting Minutes 5-30-2088</title>
-<meta name="description" content="Meeting Summary 5-30-2088">
-<link rel="icon" type="image/x-icon" href="/Resources/favicon-16x16.png">
-  </head>
+<head>
+    <title>Meeting Minutes 5-30-2088</title>
+    <meta name="description" content="Meeting Summary 5-30-2088">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="minutes.css">
+</head>
   <body>
-    <header>Doomsday Preppers - Saviors of the Galaxy
+    <header>
+        <div>Doomsday Preppers - Saviors of the Galaxy</div>
         <nav>
-            <a href="https://www.youtube.com/watch?v=yS2KyK3pqj4/">Survival music</a> |
-            <a href="https://en.wikipedia.org/wiki/Fallout_shelter">How to survive</a> |
-        </nav>          
+            <a href="https://www.youtube.com/watch?v=yS2KyK3pqj4/">Survival music</a>
+            <a href="https://en.wikipedia.org/wiki/Fallout_shelter">How to survive</a>
+        </nav>  
+        <img id="logo" src="Resources/logo.png" alt="Group logo">
     </header>
     <main>
         <h1>Meeting Minutes May 30, 2088</h1>
@@ -68,7 +73,7 @@
             <img src="Resources/sit-on-toilet.jpg" alt="gameplan">
         </section></div>
         <div><section>
-            <h2>Is it hopeless</h2>
+            <h2 class="conclusion">Is it hopeless</h2>
             <p>We must not <span>lose hope</span> although the 
                 end seems near. There could still be a habitable
                 environment for us to rebuild humanity.
@@ -85,41 +90,43 @@
         <form>
             <fieldset>
                 <legend>Contact us for more information</legend>
-                <p>Preferred communciation method</p>
-                <input type="radio" id="phone" name="phone" value="p">
-                <label for="phone">Phone</label><br>
-                <input type="radio" id="email" name="email" value="e">
-                <label for="email">Email</label><br>
-                <p>What does your contact concern?</p>
-                <input type="checkbox" id="mental" name="mental" value="m">
-                <label for="mental">Mental health</label><br>
-                <input type="checkbox" id="food" name="food" value="f">
-                <label for="food">Food concerns</label><br>
-                <p>Contact info</p>
-                <label for="name">Enter name and DOB here:</label><br>
-                <input type="text" id="name" name="name" value="">
-                <input type="date" id="date" name="date" value=""><br>
-                <p>Enter message:</p>
-                <textarea>Enter message here.</textarea><br>
-                <p>Enter being type:<p>
-                <input list="being-type" id="bt" name="bt">
-                <datalist id="being-type">
-                    <option value="Alien"></option>
-                    <option value="Human"></option>
-                    <option value="Space-bear"></option>
-                </datalist><br>
-                <p>Where do you live?</p>
-                <select name="location" id="locs">
-                    <option value="">--Please choose an option--</option>
-                    <option value="earth">Earth</option>
-                    <option value="other">Other</option>
-                </select><br>
-                <button>Submit</button>
+                    <p>Preferred communciation method</p>
+                    <input type="radio" id="phone" name="phone" value="p">
+                    <label for="phone">Phone</label><br>
+                    <input type="radio" id="email" name="email" value="e">
+                    <label for="email">Email</label><br>
+                    <p>What does your contact concern?</p>
+                    <input type="checkbox" id="mental" name="mental" value="m">
+                    <label for="mental">Mental health</label><br>
+                    <input type="checkbox" id="food" name="food" value="f">
+                    <label for="food">Food concerns</label><br>
+                    <p>Contact info</p>
+                    <div id="info">
+                        <label for="name">Enter name and DOB here:</label><br>
+                        <input type="text" id="name" name="name" value="">
+                        <input type="date" id="date" name="date" value=""><br>
+                    </div>
+                    <p>Enter message:</p>
+                    <textarea>Enter message here.</textarea><br>
+                    <p>Enter being type:<p>
+                    <input list="being-type" id="bt" name="bt">
+                    <datalist id="being-type">
+                        <option value="Alien"></option>
+                        <option value="Human"></option>
+                        <option value="Space-bear"></option>
+                    </datalist><br>
+                    <p>Where do you live?</p>
+                    <select name="location" id="locs">
+                        <option value="">--Please choose an option--</option>
+                        <option value="earth">Earth</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <button>Submit</button>
               </fieldset>
         </form>
         <nav>
-            <a href="https://www.youtube.com/watch?v=yS2KyK3pqj4/">Survival music</a> |
-            <a href="https://en.wikipedia.org/wiki/Fallout_shelter">How to survive</a> |
+            <a href="https://www.youtube.com/watch?v=yS2KyK3pqj4/">Survival music</a>
+            <a href="https://en.wikipedia.org/wiki/Fallout_shelter">How to survive</a>
         </nav>    </footer>
   </body>
 </html>
