@@ -1,0 +1,145 @@
+/*Stylesheet for meeting minutes*/
+
+:root {
+    --misty-rose-hex: #FFE4E1;
+}
+
+header {
+    background: darkslategray;
+    position: fixed;
+    padding-bottom: 10px;
+
+    width:100vw;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    text-decoration: underline;
+
+    min-height:auto;
+    top:0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav {
+    margin:auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+*#logo {
+    height: 2.75pc;
+    width:auto;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+body {
+    position: static;
+    background: darkslategray;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+    display: block;
+}
+
+body > main {
+    max-width: 800px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    background-color: mistyrose;
+    background-color: var(--misty-rose-hex,#FFE4E1);
+    background-color: rgb(255, 228, 225);
+    background-color: hsl(6 100% 94.1%);
+    background-color: color(display-p3 0.982 0.898 0.885);
+    background-color: color-mix(
+        in srgb,
+        mistyrose 75%,
+        mintcream 25%
+    );
+}
+
+footer {
+    padding-top:0;
+    padding-left:0;
+    padding-bottom:20px;
+    padding-right:0;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+fieldset {
+    padding:20px;
+    display: inline-block;
+
+    border-style: dashed;
+    border-color: navy;
+    border-width: 1px;
+    border-radius: 3px;
+
+    text-align: left;
+
+    width:90%;
+    max-width: 6in;
+    min-width: 1in;
+}
+
+#info {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 5px;
+}
+
+@media screen and (orientation: landscape) {
+    header {
+      position: static;
+    }
+    main {
+        margin-top: 1rem;
+    }
+}
+
+input[type="radio"] {
+    accent-color: navy;
+}
+  
+input[type="checkbox"] {
+    accent-color: navy;
+}
+
+legend ~ p {
+    color:lightblue;
+}
+
+summary + ul {
+    color: lightcoral;
+}
+
+h2.conclusion {
+    color:darkslategrey;
+}
+
+ul:has(li) {
+    font-size: large;
+}
